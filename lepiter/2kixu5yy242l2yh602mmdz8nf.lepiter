@@ -1,0 +1,212 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:44:36.42862-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T15:04:23.776335-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cU98CTPVDQCzg9UKBMtpKw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Data source: [](https://climatologia.meteochile.gob.cl/application/requerimiento/producto/RE3008/330019) "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:44:15.714279-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T15:20:53.32811-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9DtACDPVDQCkCzfQBMtpKw=="
+				},
+				"code" : "aRootDir := FileLocator downloads / 'Meteo' "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:48:23.302535-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:48:23.302535-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VRcCFzPVDQC30CQABMtpKw=="
+				},
+				"code" : "allCsvFiles := (aRootDir filesMatching: '*.csv') "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:48:38.232889-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:50:18.870966-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YO/lFzPVDQC31tpgBMtpKw=="
+				},
+				"code" : "tempCsvFile := (aRootDir filesMatching: '*Temperatura*.csv') first"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "juraj.kubelka@icloud.com"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T12:52:42.760303-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-05-19T15:21:10.929732-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FiB5JjPVDQC60hyoBMtpKw=="
+				},
+				"code" : "allTemperatureValues := ChileTemperatureValues\r\twithAll: ((tempCsvFile\r\t\t\treadStreamEncoded: #utf8\r\t\t\tdo: [ :aStream | \r\t\t\t\t(NeoCSVReader on: aStream)\r\t\t\t\t\trecordClass: ChileTemperatureValue;\r\t\t\t\t\tseparator: $;;\r\t\t\t\t\tskipRecord;\r\t\t\t\t\taddIntegerField: #code:;\r\t\t\t\t\taddField: #time:\r\t\t\t\t\t\tconverter: [ :aString | \r\t\t\t\t\t\t\t| dateAndTime date time |\r\t\t\t\t\t\t\tdateAndTime := Character space split: aString.\r\t\t\t\t\t\t\tdate := ($- split: dateAndTime first) collect: #asInteger.\r\t\t\t\t\t\t\ttime := ($: split: dateAndTime second) collect: #asInteger.\r\t\t\t\t\t\t\tDateAndTime\r\t\t\t\t\t\t\t\tyear: date third\r\t\t\t\t\t\t\t\tmonth: date second\r\t\t\t\t\t\t\t\tday: date first\r\t\t\t\t\t\t\t\thour: time first\r\t\t\t\t\t\t\t\tminute: time second\r\t\t\t\t\t\t\t\tsecond: time third\r\t\t\t\t\t\t\t\toffset: 0 asSeconds ];\r\t\t\t\t\taddFloatField: #temperature:;\r\t\t\t\t\tupToEnd ]) reject: [ :each | each temperature isNil ])"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "juraj.kubelka@icloud.com"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-05-19T12:44:30.362623-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "juraj.kubelka@icloud.com"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-05-19T12:44:36.407762-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Weather in Santiago"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "8b3b4008-33d5-0d00-a40a-8a4604cb692b"
+	}
+}
